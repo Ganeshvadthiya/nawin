@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Lynx;
+    src: url(fonts/Lynx.ttf);
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+  
+}
+header{
+    background-color: red;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: Lynx;
+    font-size: 24px;
+    font-weight: 500;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input {
+    padding: 5px;
+    margin: 0;
+    
+  }
+  .search button {
+    padding: 5px 10px;
+    background-color: black;
+    color: red;
+    cursor: pointer;
+  }
+  .navlist{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+      }
+  .navlist li{
+    margin: 0;
+  }
+  .navlist a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    transition: .3s ease;
+  }
+  .navlist a:hover{
+    background-color: black;
+    color: red;
+}
+.menu-toggle{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.home-content{
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.feature{
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    padding:  50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-family: Lynx;
+    font-size: 10rem;
+}
+.music-header{
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 50px 20px;
+}
+.video-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.video{
+    flex: 1;
+    margin: 20px;
+}
+.contact-header{
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 50px 20px;
+}
+.contact-header h3{
+    margin-bottom: 20px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 8px;
+}
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+button{
+    background-color: black;
+    color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+.sociallinks{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.sociallinks a{
+    display: inline-block;
+    margin: 0 10px;
+    color: red;
+    text-decoration: none;
+}
+.footerbottom{
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .navlist{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: red
+    
+    }
+    .navlist.show{
+        display: flex;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .feature{
+        flex: 100%;
+    }
+    .video{
+        flex: 100%;
+    }
+    input,
+    text-area{
+        width: calc(100% - 20px);
+    }
+    .footer-section{
+        flex: 100%;
+    }
+}
+
+    
